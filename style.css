@@ -1,0 +1,100 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar-custom {
+    background-color: #333;
+    
+}
+
+.nav-item-custom .nav-link {
+    color: #015958;
+    font-weight: bold; /* Adiciona negrito ao texto do menu */
+}
+.navbar-brand {
+    color: #015958;
+    font-weight: bold; /* Adiciona negrito ao texto da marca (brand) */
+}
+
+.navbar-toggler-icon {
+    color: #015958 !important;
+}
+/*#nav{
+    color: #015958;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    text-align: center;
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}*/
+
+/* Estilos para o conteúdo principal */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.noticia {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    max-width: 400px;
+    text-align: center;
+}
+
+.noticia img {
+    max-width: 100%;
+}
+
+.noticia h2 {
+    margin-top: 10px;
+}
+
+.noticia h3 {
+    color: #015958;
+    margin-top: 5px;
+}
+
+.noticia p {
+    margin-top: 10px;
+}
+
+.leia-mais {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #015958;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.leia-mais:hover {
+    background-color: #555;
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
