@@ -1,51 +1,48 @@
-
-* {
+body, html {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
+/* Header */
 .navbar-custom {
-    background-color: #333;
-    
+    justify-content: center;
+    background-image: url('utsav-srestha-HeNrEdA4Zp4-unsplash.jpg'); /* Adicione o caminho para a sua imagem */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1000; /* Certifique-se de que o header fique sobre outros elementos */
+    color:  #015958; /* Cor do texto no header */
 }
 
-.nav-item-custom .nav-link {
-    color: #015958;
-    font-weight: bold; /* Adiciona negrito ao texto do menu */
-}
 .navbar-brand {
-    color: #015958;
-    font-weight: bold; /* Adiciona negrito ao texto da marca (brand) */
+    margin-right: auto; /* Alinha a esquerda */
 }
 
-.navbar-toggler-icon {
-    color: #015958 !important;
-}
-/*#nav{
-    color: #015958;
+.form-inline {
+    margin-left: auto; /* Alinha a direita */
 }
 
-header h1 {
-    margin-bottom: 10px;
+.search-bar {
+    position: relative;
 }
 
-nav ul {
-    list-style-type: none;
+.search-input {
+    padding-right: 38px; /* Espaço para o ícone */
+    border-radius: 0; /* Remove a borda */
+    background-color: rgba(255, 255, 255, 0.7); /* Cor de fundo da barra de pesquisa */
 }
 
-nav ul li {
-    text-align: center;
-    display: inline;
-    margin-right: 20px;
+.search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #015958; /* Cor da lupa */
+    border: none; /* Remove a borda */
+    background-color: transparent; /* Remove a cor de fundo */
 }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}*/
-
-/* Estilos para o conteúdo principal */
+/* Conteúdo Principal */
 main {
     display: flex;
     flex-wrap: wrap;
@@ -67,11 +64,14 @@ main {
 
 .noticia h2 {
     margin-top: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .noticia h3 {
     color: #015958;
     margin-top: 5px;
+    font-size: 20px;
+    text-transform: lowercase;
 }
 
 .noticia p {
@@ -92,10 +92,77 @@ main {
     background-color: #555;
 }
 
-/* Estilos para o rodapé */
+/* Rodapé */
 footer {
     background-color: #333;
     color: #fff;
     padding: 20px;
     text-align: center;
+}
+
+/* Imagem Centralizada */
+.centered-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 5%
+}
+
+.centered-image {
+    height: 26%;
+    width: 36%;
+}
+
+.slogam{
+    font-size: 3vw;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #333;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+/* Segunda Página */
+.noticia-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.noticia-titulo {
+    font-size: 4vw;
+    font-weight: bold;
+    color: #333;
+}
+.noticia-subtitulo {
+    font-size: 2vw;
+    color: #015958;
+    margin-top: 10px;
+}
+.noticia-imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+}
+.noticia-texto {
+    margin-top: 1vw;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+.noticia-autor {
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+}
+.noticia-autor span {
+    font-weight: bold;
+    color: #333;
 }
